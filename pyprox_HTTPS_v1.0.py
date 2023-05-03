@@ -1,4 +1,4 @@
-import pip._vendor.requests as requests
+import requests
 import json
 import socket
 import threading
