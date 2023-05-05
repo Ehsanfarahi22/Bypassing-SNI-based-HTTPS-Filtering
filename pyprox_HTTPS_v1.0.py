@@ -137,7 +137,7 @@ def dns(url):
   try:
     return ips[urls.index(url)]    #return ip if cached before
   except ValueError:
-    if url.endswith("youtube.com") or url.endswith("ytimg.com") or url.endswith("googleapis.com") or url.endswith("googlevideos.com") :
+    if url.endswith("youtube.com") or url.endswith("ytimg.com") or url.endswith("googleapis.com") or url.endswith("googlevideo.com") :
       ip =socket.gethostbyname('google.com')     # working google ip based on client's ISP
       urls.append(url)
       ips.append(ip)
